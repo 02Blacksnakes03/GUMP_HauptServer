@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="ui.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">
+        <script src="ui.js"></script>
+    </head>
+    <body>
+        <left>
+            <img src="https://cdn.discordapp.com/attachments/924296917373050912/944197273661866045/Discord2.png">
+            <p id="stock"><b>Kraftstoff auf Lager</b>:<BR> 150</p>
+            <div class="act">
+                <button id="retirar">Voll Tanken</button>
+                <button id="guardar">Bestimmte Menge</button>
+            </div>
+        </left>
+        <div class="container">
+            <small>Tankstelle</small><br>
+            <span>Fahrzeuge</span>
+            <div class="box">
+                <span id="title">Zu Bezahlen</span>
+                <div class="item" style="border: none;">
+                    <button id="minus">-</button>
+                    <input id="amount" type="number" placeholder="$">
+                    <button id="plus" style="right: 5px;">+</button>
+                </div>
+            </div>
+            <div class="box">
+                <span id="title">Tank Inhalt</span>
+                <div class="item">
+                    <div class="litro">
+                        <span><span>$</span> 0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <span id="title">Preis pro Liter</span>
+                <div class="item">
+                    <span id="fuel-price"><span style="font-size: 18px;">$</span> 1.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <button class="accept btninfo">Bestätigen</button>
+            <span>Bist du sicher das du Volltanken willst<br><b>$ 85,00</b></span>
+            <button class="recuse btninfo">Abbrechen</button>
+        </div>
+    </body>
+</html>

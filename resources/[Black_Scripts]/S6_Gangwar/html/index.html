@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  	-ms-overflow-style: none;
+  	scrollbar-width: none;
+  	display: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#frakhud {
+		position: absolute;
+		width: 585px;
+		height: 67px;
+		left: 668px;
+		top: 37px;
+		overflow: visible;
+	}
+	#main {
+		position: absolute;
+		width: 585px;
+		height: 67px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#fight {
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		left: 278px;
+		top: 14px;
+		overflow: visible;
+	}
+	#n_222 {
+		left: 276px;
+		top: 45px;
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 10.416669845581055px;
+		color: rgba(151,151,151,1);
+		letter-spacing: 1.1px;
+	}
+	#frak {
+		position: absolute;
+		width: 463px;
+		height: 20px;
+		left: 60px;
+		top: 11px;
+		overflow: visible;
+	}
+	#YAKUZA {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 14.583330154418945px;
+		color: rgba(151,151,151,1);
+		letter-spacing: 1.1px;
+	}
+	#YAKUZA_m {
+		left: 395px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 14.583330154418945px;
+		color: rgba(151,151,151,1);
+		letter-spacing: 1.1px;
+	}
+	#score {
+		position: absolute;
+		width: 207px;
+		height: 32px;
+		left: 188px;
+		top: 18px;
+		overflow: visible;
+	}
+	#n_29 {
+		left: 162px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 22.916669845581055px;
+		color: rgba(219,219,219,1);
+		letter-spacing: 1.1px;
+	}
+	#n_29_p {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 22.916669845581055px;
+		color: rgba(219,219,219,1);
+		letter-spacing: 1.1px;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+	<div id="Canvas">
+		<div id="frakhud">
+			<img id="main" src="main.png" srcset="main.png 1x">
+				
+			<img id="fight" src="fight.png" srcset="fight.png 1x">
+				
+			<div id="n_222">
+				<span>22:22</span>
+			</div>
+			<div id="frak">
+				<div id="YAKUZA">
+					<span>MG13</span>
+				</div>
+				<div id="YAKUZA_m">
+					<span>BLOODS</span>
+				</div>
+			</div>
+			<div id="score">
+				<div id="n_29">
+					<span>2</span>
+				</div>
+				<div id="n_29_p">
+					<span>0</span>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
