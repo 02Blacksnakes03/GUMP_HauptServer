@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD COLUMN `patron_weste` VARCHAR(10) NOT NULL DEFAULT 'false';
