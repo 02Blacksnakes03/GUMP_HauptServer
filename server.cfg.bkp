@@ -1,0 +1,156 @@
+set es_enableCustomData 1
+#set mysql_connection_string " "
+add_ace resource.essentialmode command.add_principal allow
+add_ace resource.essentialmode command.sets allow
+# you probably don't want to change these!
+# only change them if you're using a server with multiple network interfaces
+endpoint_add_tcp "0.0.0.0:30125"
+endpoint_add_udp "0.0.0.0:30125"
+
+#db string
+set mysql_connection_string "server=localhost;uid=root;password=;database=fivem1"
+server_script '@async/async.lua'
+
+
+start dpclothing
+start byte_login
+start meta_libs
+start mhacking
+start lockpicking
+start doors
+start Fraklager
+start mapmanager
+start chat
+start spawnmanager
+start playernames
+start sessionmanager
+start fivem
+start hardcap
+start instance
+start rconlog
+start cron
+start es_extended
+start essentialmode
+start mysql-async
+start esx_menu_default
+start esx_menu_list
+start esx_menu_dialog
+start esx_license
+start instance
+start esx_skin
+start esx_identity
+start bob74_ipl
+start fivem-ipl
+start skinchanger
+start glmp_tankstelle
+start esx_trunk
+start Maps
+start MLOs
+start saltychat
+start esx_ambulancejob
+start airport
+start GLMPMaps
+start loadingscreen
+start eup-stream
+ensure glmp001 
+ensure glmp002
+ensure glmp003
+ensure postal_map
+start cars
+start esx_doorlock
+start indev
+start esx_vehicleshop
+start esx_barbershop
+start interact-sound
+start esx_clotheshop
+#start nvhx
+#start esx_clotheshop
+
+
+start house
+start simpletp
+start [Black_Scripts]
+start territories
+
+#Bitcoin Fahrzeuge
+
+start [cars2]
+start GLMP-Cars
+start [BlackCars]
+start [Audio_Cars]
+start [Felgen]
+
+
+start [Kleidung]
+start [Daemon_Haare]
+start [Daemon_Hosen]
+start [Daemon_Schuhe]
+start [Daemon_Steppjacke]
+start [Daemon_TShirts]
+start [LSMD_Kleidung]
+start snail_hoodies
+
+
+#Maps
+#start lafa2k_finalfantasyxv
+start gabz_mrpd2
+start Redline_Tuner_Shop
+start Redline_Vip_Showroom
+#start Helipad
+#start casinoexterior
+#start casinointerior
+
+#start Hope-Bridge-for-Cayo-Perico-main
+start Unicorn
+stop inventory
+restart glmp002
+
+
+sv_scriptHookAllowed 1
+
+# change this
+#rcon_password yay
+
+sets banner_connecting "https://gump-rp.de/logo/FiveM_Banner.png"
+sets banner_detail "https://gump-rp.de/logo/FiveM_Banner.png"
+load_server_icon FiveM.png
+setr ea_LanguageName "de"
+sets locale "de-DE"
+sv_hostname "Blacksnakes_DevServer"
+sets sv_projectName "Blacksnakes_DevServer"
+sets sv_projectDesc "^1🔐Einreiseamt ^0| 🔈 ^9SaltyChat ^0| ^2💸Startgeld 65K💸 ^0| 🛡^1Anti-Cheat ^0| | 🛡^1MidCore ^0| ^6🚗Echte Automarken🚗 ^0| 🌌https://discord.gg/PVadfMtRky 🌌 Ts3: gump-rp.ts3index.com"
+
+set sv_enforceGameBuild 2189
+# nested configs!
+#exec server_internal.cfg
+
+# loading a server icon (96x96 PNG file)
+#load_server_icon myLogo.png
+
+# convars for use from script
+set temp_convar "hey world!"
+
+# disable announcing? clear out the master by uncommenting this
+#sv_master1 "true"
+
+# want to only allow players authenticated with a third-party provider like Steam?
+sv_authMaxVariance 1
+sv_authMinTrust 5
+
+# add system admins
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_principal identifier.steam:1100001166f2d38 group.admin # add the admin to the group
+
+# remove the # to hide player endpoints in external log output
+#sv_endpointprivacy true
+
+# server slots limit (must be between 1 and 31)
+sv_maxclients 218
+
+# license key for server (https://keymaster.fivem.net)
+sv_licenseKey "cfxk_JT7jM7uRL176OWifsYVu_DWynd"
+set steam_webApiKey "4B383915D4512F87C4F8EFD5C171E35E"
+
+#TEBEX
+sv_tebexSecret "6de7c47b5d6b13797f93bfe6a1bd6942a395daf0"
