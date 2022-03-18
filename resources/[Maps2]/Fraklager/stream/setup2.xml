@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<SSetupData>
+  <deviceName>dlc_rayzen_wp_garage</deviceName>
+  <datFile>content.xml</datFile>
+  <timeStamp>04/09/2019 13:48</timeStamp>
+  <nameHash>dlc_rayzen_wp_garage</nameHash>
+  <contentChangeSetGroups>
+    <Item>
+			<NameHash>GROUP_EARLY_ON</NameHash>
+			<ContentChangeSets>
+				<Item>CCS_TEMPLATE1_NG_INIT</Item>
+			</ContentChangeSets>
+		</Item>
+		<Item>
+			<NameHash>GROUP_UPDATE_STREAMING</NameHash>
+			<ContentChangeSets>
+				<Item>CCS_TEMPLATE1_NG_STREAMING</Item>
+				<Item>CCS_TEMPLATE1_NG_STREAMING_MAP</Item>
+			</ContentChangeSets>
+		</Item>
+  </contentChangeSetGroups>
+  <startupScript />
+	<scriptCallstackSize value="0" />
+	<type>EXTRACONTENT_LEVEL_PACK</type>
+	<order value="2" />
+	<minorOrder value="0" />
+	<isLevelPack value="true" />
+	<dependencyPackHash />
+	<requiredVersion />
+	<subPackCount value="0" />
+</SSetupData>
+
+<!-- DLC build by Dekurwinator -->
