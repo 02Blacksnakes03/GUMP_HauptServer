@@ -1,0 +1,17 @@
+Locales['en'] = {
+  ['shop_robbery'] = 'Ladenraub',
+  ['press_to_rob'] = 'Drücke ~INPUT_CONTEXT~ zum ausrauben',
+  ['robbery_timer'] = 'Ladenraub: %s Sekunden verbleiben, bis zur Beute',
+  ['recently_robbed'] = 'Dieser Laden wurde bereits ausgeraubt. Bitte warte %s Sekunden',
+  ['rob_in_prog'] = 'Ein Ladenraub wurde gemeldet, Standort: %s',
+  ['started_to_rob'] = 'Du hast einen Raub gestartet: %s',
+  ['alarm_triggered'] = 'Alarm ausgelöst, das LSPD wurde informiert',
+  ['robbery_complete'] = 'Raub erfolgreich. Deine Beute: $%s',
+  ['robbery_complete_at'] = 'Der Ladenraub war erfolgreich, Standort: %s',
+  ['robbery_cancelled'] = 'Der Raub wurde abgebrochen, du bekommst nichts',
+  ['robbery_cancelled_at'] = 'Ladenraub wurde abgebrochen, Standort: %s',
+  ['min_police'] = 'Es müssen mindestens 5 LSPD Beamte im Dienst sein um einen Ladenraub starten zu können',
+	--['min_fib'] = 'Es müssen 3 LSDPler im Dienst sein um ein Ladenraub zu starten',
+  ['robbery_already'] = 'Ein Raub ist bereits im gange',
+  ['no_threat'] = 'Du benötigst eine Waffe, um den Kassierer einzuschüchtern',
+}
