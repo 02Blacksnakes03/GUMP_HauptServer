@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+.playerStats{
+	position: absolute;
+	/* right: 18.2%; /* Default: 350px */
+	/* margin-top: 1.85%; /* Default: 20px */
+
+	left: 16.2%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 4.0%;
+	/*right: 2.7%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*bottom: 1.85; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	/* Für die Zukunft dies ist ein Fix Parameter für die rechte Seite der Minimap in % FIX */
+}
+
+.carStats{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+.stat{
+	color: #fff;
+	background: #171616;
+	width: 220px;
+	height: 28px;
+	position: relative;
+	margin-bottom: 4px;
+	/*box-shadow: 0 10px 15px rgba(0,0,0,0.3);*/
+}
+
+.stat .icon{
+	height: 28px;
+	width: 28px;
+	background: #171616;
+	border-radius: 15%;
+	position: relative;
+	display: inline-block;
+	bottom: 3px;
+	right: 15px;
+	border-top: 0px solid #ffbb00;	
+	border-bottom: 0px solid #ffbb00;
+	border-left: 3px solid #ffbb00;
+}
+
+div .stat {	
+	border-top: 3px solid #ffbb00;	
+	border-bottom: 3px solid #ffbb00;
+	border-right: 0px solid #ffbb00;
+}	
+
+
+.stat .icon i, .stat .icon img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat .icon img{
+	height: 15px;
+	width: 14px;
+}
+
+
+.stat span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -10px;
+	font-size: 15px;
+}
+
+.stat .progress {
+	top: 23%;
+	left: 9%;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;	
+	height: 10px;	
+	width: 85%;
+	position: absolute;
+}
+
+
+
+.carStats .stat{
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	text-align: right;
+}
+
+.carStats .stat .icon{
+	float: right;
+	right: 0px;
+	left: 15px;
+}
+
+.carStats .stat span{
+	white-space: nowrap;
+	right: 20px;
+}
+
+.status{
+	display: flex;
+	width: 195px;
+	position: relative;
+	left: -15px;
+	justify-content: space-between;
+}
+
+.veh-gas{
+	display: flex;
+	width: 235px;
+	position: relative;
+	right: -15px;
+	justify-content: space-between;
+}
+
+
+.vert-stat{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.vert-stat .bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-stat img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+#gas{
+	position: absolute;
+	right: 100px;
+	bottom: 50px;
+
+}
