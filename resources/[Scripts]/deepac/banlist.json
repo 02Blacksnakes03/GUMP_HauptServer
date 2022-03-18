@@ -1,0 +1,22 @@
+{
+    "nil": {
+        "ID": 903564,
+        "ip": "NONE SUPPLIED",
+        "license": "NONE SUPPLIED",
+        "discord": "NONE SUPPLIED",
+        "reason": "Tried to spawn Blacklisted Explosion, Type: 5",
+        "steam": "NONE SUPPLIED",
+        "live": "NONE SUPPLIED",
+        "xbl": "NONE SUPPLIED"
+    },
+    "Wolf": {
+        "ID": 195258,
+        "xbl": "NONE SUPPLIED",
+        "discord": "503275692071583757",
+        "license": "license:183181e8ce500156e7c7293d2fbd4083b6d09a74",
+        "reason": "Tried to spawn Blacklisted Explosion, Type: 5",
+        "steam": "steam:110000131ffa4b0",
+        "live": "NONE SUPPLIED",
+        "ip": "NONE SUPPLIED"
+    }
+}
