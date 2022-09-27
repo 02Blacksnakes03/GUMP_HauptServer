@@ -1,2 +1,2 @@
 ﻿# Server
-OpenProjekt
+OpenProjektforWebhost
